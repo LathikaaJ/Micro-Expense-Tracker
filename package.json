@@ -1,0 +1,25 @@
+{
+  "name": "ai-expense-tracker-backend",
+  "version": "2.0.0",
+  "description": "Hybrid Intelligent Expense Tracker Backend — Rule + ML + Gemini",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch-path=./index.js --watch-path=./middleware --watch-path=./ml --watch-path=./models --watch-path=./routes --watch-path=./services --watch-path=./store index.js",
+    "train": "node ml/trainScript.js"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.6.1",
+    "multer": "^2.1.1",
+    "sharp": "^0.35.5",
+    "socket.io": "^4.8.3",
+    "tesseract.js": "^7.0.0"
+  }
+}
